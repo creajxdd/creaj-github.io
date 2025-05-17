@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Proyecto de Vida</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Estilos para el chatbot */
+    #openChatBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 20px;
+      z-index: 999;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    #chatbot {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 300px;
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      font-family: sans-serif;
+      display: none;
+      flex-direction: column;
+      z-index: 1000;
+    }
+
+    #chatHeader {
+      background: #4CAF50;
+      color: white;
+      padding: 10px;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 10px 10px 0 0;
+    }
+
+    #chatHeader button {
+      background: transparent;
+      border: none;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    #chatBody {
+      padding: 10px;
+      max-height: 250px;
+      overflow-y: auto;
+    }
+
+    #userInput {
+      width: 75%;
+      padding: 5px;
+      margin: 10px 5px;
+    }
+
+    #sendBtn {
+      padding: 6px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .message {
+      margin: 5px 0;
+    }
+
+    .user {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .bot {
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mi Proyecto de Vida</h1>
+    <p>Construyendo un futuro con propósito y acción</p>
+  </header>
+
+  <main>
+    <h2 onclick="toggle('economico')">💰 Estrategias Económicas</h2>
+    <section id="economico">
+      <ul>
+            <!-- Subtema -->
+  <h3><ol> Objetivo claro y medible</h3></ol>
+  <ol> Define una meta financiera concreta (ejemplo, ahorrar $2,000 en 12,meses) y desglósala en metas mensuales; así podrás celebrar logros parciales y ajustar tu ritmo según imprevistos. </ol>
+    <h3><ol> Presupuesto dinámico</h3></ol>
+    <ol> Clasifica ingresos (salario, remesas, venta de productos) y gastos (fijos y variables), y reserva un 15% mínimo para ahorro/inversión. Revisa tu flujo cada mes y ajusta categorías (ejemplo., reducir suscripciones o negociar servicios).</ol>
+    <h3><ol> Múltiples fuentes de ingreso</h3></ol>
+    <ol> Combina trabajo formal con microemprendimientos digitales (venta de artesanías en Instagram, servicios de traducción en Workana) y presencial (clases particulares, turismo local). Diversificar protege tu proyecto ante crisis sectoriales. </ol>
+    <h3><ol> Formación estratégica</ol></h3>
+    <ol> Invierte en cursos cortos alineados con la demanda (programación básica, fotovoltaica, agricultura de ciclo corto). Aprovecha becas, webinars gratuitos y programas del PNUD o ACNUR para minimizar costos y ampliar tu red de contactos.</ol>
+  <h3><ol> Gestión de riesgo y red de apoyo </ol></h3>
+  <ol> Crea un fondo de emergencia equivalente a 3meses de gastos y evalúa microcréditos responsables para expandir tu negocio. Conecta con cámaras de comercio y grupos de emprendedores para obtener mentoría, compartir proveedores y acceder a ferias locales.  </ol>
+</ul>
+</section>
+
+<main>
+    <h2 onclick="toggle('estudios')">📚 Planes de Estudio de Educación Media</h2>
+    <section id="estudios">
+      <ul>
+        <!-- Subtema -->
+        <h3><ol>Plan de estudios personalizado</h3></ol>
+
+   <h3><ol>Aprovecha la educación gratuita (4-15 años): </ol></h3>
+   <ol> El sistema público cubre desde preescolar hasta 9.° grado; la alfabetización supera el 90%, así que consolida una base sólida antes de avanzar.:</ol>
+      
+   <h3><ol> Completa el Bachillerato Técnico o General:</ol></h3>
+<ol> Solo un tercio de los graduados de 9.° grado accede al bachillerato: fija como meta ingresar y terminar esos 2-3 años para acceder a empleos mejor remunerados y a la universidad.</ol>
+
+<h3><ol> Elige carreras con alta demanda local (terciario ~32%):</ol></h3>
+<Ol> • TI y Programación
+    • Energías Renovables (fotovoltaica)
+    • Agroindustria Sostenible
+    • Turismo Comunitario
+    Investiga mallas en UES, UCA, ITCA-FNDR y UNICIT.</Ol>
+
+    <h3><ol> Diseña un plan SMART de 1, 3 y 5 años:</ol></h3>
+    <ol> • 1 año: terminar 100% del bachillerato.
+        • 3 años: certificarte en un curso técnico (e.g., programación, idiomas).
+        • 5 años: obtener título universitario y completar una pasantía remunerada.
+        </ol>
+         <h3><ol>Explora financiamiento y becas:</ol></h3>
+         <Ol> • Fondos PROEDUCA (MINEC) y UES para apoyo parcial o total.
+            • Becas OEA/organismos internacionales para estudios en el extranjero.
+            • Modalidades en línea para reducir costos de transporte y materiales.</Ol>
+            
+            <h3><ol> Refuerza habilidades transversales:</ol></h3>
+            <ol> • Inglés Técnico: cursos INSAFORP o Duolingo.
+                • Comunicación y Liderazgo: participa en clubes, debates o voluntariados locales.
+                • Trabajo en Equipo y Pensamiento Crítico: proyectos grupales y ferias científicas.
+                </ol>
+<h3><ol> Vive la profesión antes de decidir </ol></h3>    
+<ol> Haz pasantías cortas, voluntariados en EDUCO o proyectos comunitarios; así confirmarás si el día a día de la carrera coincide con tus expectativas.</ol>
+<h3><ol> Construye tu red y busca mentoría:</ol></h3>
+<ol> Conecta en LinkedIn con egresados y asociaciones (Cámara de Comercio); organiza “coffee chats” de 15 min para recibir consejos prácticos y ampliar oportunidades. </ol>
+</ul>
+</section>
+</main>
+<h2 onclick="toggle('social')">🤝 Servicios Sociales</h2>
+    <section id="social">
+      <ul>
+        <h3><ol>Define tu causa y metas SMART </ol></h3>
+        <ol>Elige un área de impacto real (p. ej., educación, salud comunitaria, medio ambiente) y fija objetivos específicos y medibles: “Impartir 4 talleres de cien personas en 6 meses en el Centro Comunal X”.</ol>
+     <h3><ol> Haz un diagnóstico local y alianzas</ol></h3>
+     <ol>Mapea ONG (EDUCO, FUSADES), escuelas, alcaldía y comités de barrio.
+
+        Solicita apoyo de la alcaldía para espacios y fondos municipales.
+        
+        Busca patrocinios en especie o en efectivo con negocios locales.</ol>
+        <h3> <ol> Estructura legal y obligaciones fiscales</ol></h3>
+        <ol>Registra tu proyecto como asociación o Junta de Acción Comunal ante RNPN (Registro Nacional de Personas Jurídicas).
+
+            Inscríbete en el Centro de Atención al Contribuyente del Ministerio de Hacienda y cumple con:
+            
+            IVA: declaraciones bimestrales si generas ventas o servicios.
+            
+            ISR: retenciones de empleados o pagos a proveedores.
+            
+            Tasas municipales: patentes comerciales o permisos de evento.</ol>
+      </ul>
+    </section>
+  </main>
+
+  <main>
+    <h2 onclick="toggle('avanzado')"> 📚 Plan de estudios Avanzados</h2>
+    <section id="avanzado">
+        <ul>
+            <!-- Subtema -->
+            <h3><ol> Elige la modalidad adecuada:</ol></h3>
+            <ol> • Presencial en universidades públicas (UES, UCA) y privadas (ITCA-FNDR, UNICIT, Don Bosco) según tu área.
+                • En línea o semipresencial en plataformas de la UES Virtual, Coursera, edX — ideal si trabajas y estudias.</ol>
+                <h3><ol> Carreras y programas con demanda local:</ol></h3>
+<ol> • Ingeniería y TI: redes, desarrollo de software, ciberseguridad.
+    • Energías Renovables: técnico en fotovoltaica, mantenimiento de turbinas.
+    • Agroindustria Avanzada: posgrados en agroecología, biotecnología.
+    • Turismo Sostenible y Gestión Cultural: maestrías en ecoturismo comunitario.</ol>
+    <h3><ol> Financiamiento y becas especializadas:</ol></h3>
+    <ol> • Fondo UES: para estudios de pregrado y posgrado; aplica en línea cada semestre.
+        • PROEDUCA (MINEC): prórrogas para técnicos superiores y diplomados.
+        • Becas OEA, DAAD, Fulbright: para maestrías o intercambios internacionales; convoca en años fiscales.
+        • Convenios empresa-universidad: busca ofertas de empresas locales (ej., TIGO, Grupo Agrisal) que cubran matrículas a cambio de pasantías.</ol>
+        <h3><ol> Investigación y proyectos:</ol></h3>
+        <ol> • Inscríbete en semilleros de investigación desde el 2.° año; la Vicerrectoría de Investigación de la UES coordina líneas temáticas.
+            • Publica en revistas locales (Revista Científica UCA, Disyuntiva UES) y participa en congresos estudiantiles nacionales.</ol>
+            <h3><ol> Pasantías y formación dual:</ol></h3>
+            <ol> • Tramita prácticas profesionales obligatorias en tu carrera: ingenierías en CEDEL, agroecología en FUNDEGRO.
+                • Considera programas duales (ITCA-FNDR + empresa) donde alternas semanas de clase y trabajo.</ol>
+                <h3><ol> Certificaciones técnicas y cursos cortos:</ol></h3>
+                <ol> • Completa certificaciones internacionales (Cisco CCNA, Microsoft Azure) a través de INSAFORP o academias autorizadas.
+                    • Toma diplomados de 3–6 meses en áreas transversales (gestión de proyectos PMI, análisis de datos).
+                     </ol>
+                     <h3><ol> Habilidades complementarias:</ol></h3>
+                     <ol> • Inglés avanzado: certifica TOEFL o IELTS; aprovecha becas de intercambio cortas del Ministerio de Educación.
+                        • Soft skills: liderazgo, negociación y emprendimiento en talleres de fundaciones como FUSADES.</ol>
+                        <h3><ol> Red de contactos y mentoría académica:</ol></h3>
+                        <ol> • Participa en asociaciones estudiantiles (FEUES, AIESEC El Salvador) y redes profesionales en LinkedIn.
+                            • Busca mentores en tu facultad o alumni que te guíen en la transición a la vida profesional o investigación.</ol>
+    </ul>
+</section>
+  </main>
+
+  <section>
+    <h2>📝 Guardar Proyecto de Vida</h2>
+    <form id="vidaForm">
+      <label>Nombre: <input type="text" name="nombre" required></label><br><br>
+      <label>Meta Académica: <input type="text" name="academica" required></label><br><br>
+      <label>Estrategia Económica: <input type="text" name="economica" required></label><br><br>
+      <label>Servicio Social: <input type="text" name="social" required></label><br><br>
+      <button type="submit">Guardar</button>
+    </form>
+    <p id="respuesta"></p>
+  </section>
+
+  <!-- Botón flotante para abrir el chat -->
+  <button id="openChatBtn" onclick="openChat()">💬</button>
+
+  <!-- Contenedor del chatbot -->
+  <div id="chatbot">
+    <div id="chatHeader">
+      <span>🤖 Chatbot</span>
+      <button onclick="closeChat()">×</button>
+    </div>
+    <div id="chatBody">
+      <div class="message bot">Hola, ¿en qué puedo ayudarte hoy?</div>
+    </div>
+    <div style="display: flex; align-items: center; padding: 5px 10px;">
+      <input type="text" id="userInput" placeholder="Escribe tu pregunta..." />
+      <button id="sendBtn" onclick="sendMessage()">Enviar</button>
+    </div>
+  </div>
+
+  <script>
+    function openChat() {
+      document.getElementById('chatbot').style.display = 'flex';
+      document.getElementById('openChatBtn').style.display = 'none';
+    }
+
+    function closeChat() {
+      document.getElementById('chatbot').style.display = 'none';
+      document.getElementById('openChatBtn').style.display = 'block';
+    }
+
+    function toggle(id) {
+      const section = document.getElementById(id);
+      section.classList.toggle('activo');
+    }
+
+    function sendMessage() {
+      const input = document.getElementById('userInput');
+      const text = input.value.trim();
+      if (!text) return;
+
+      const chatBody = document.getElementById('chatBody');
+
+      // Agregar mensaje del usuario
+      chatBody.innerHTML += `<div class="message user">Tú: ${text}</div>`;
+
+      // Simular respuesta del chatbot
+      let response = getAIResponse(text);
+      chatBody.innerHTML += `<div class="message bot">IA: ${response}</div>`;
+
+      chatBody.scrollTop = chatBody.scrollHeight;
+      input.value = "";
+    }
+
+    function getAIResponse(input) {
+      input = input.toLowerCase();
+      if (input.includes("finanzas")) return "Puedes mejorar tus finanzas haciendo un presupuesto y ahorrando cada mes.";
+      if (input.includes("plan de estudio")) return "Un plan de estudios define qué materias y habilidades necesitas aprender.";
+      if (input.includes("servicio social")) return "El servicio social permite aplicar tus conocimientos en beneficio de la comunidad.";
+      if (input.includes("hola")) return "¡Hola! ¿En qué puedo ayudarte?";
+      if (input.includes("estudios avanzados")) return "Los estudios avanzados son una excelente manera de profundizar en un área específica y mejorar tus oportunidades laborales.";
+      if (input.includes("no sé qué estudiar") || input.includes("nose que estudiar")) return "No te preocupes, es normal no saber qué estudiar. Te recomiendo investigar sobre tus intereses y habilidades. Puedes hacer un test vocacional o hablar con un orientador educativo.";
+      if (input.includes("gracias")) return "¡De nada! Estoy aquí para ayudarte.";
+      if (input.trim() !== "") return "Interesante, ¿puedes explicarlo un poco más?";
+      return "Lo siento, no tengo información sobre eso.";
+    }
+  </script>
+</body>
+</html>
+<div class="message bot">
+   <h2>Mas consejos sobre un futuro <br></h2>
+    <h3>Aqui hay mas info sobre:</h3>
+    <ul>
+    <ol> <a href="https://www.bancoagricola.com/financiera-mente?utm_source" target="_blank">Estrategias económicas</a></li></ol>  
+      <ol><a href="https://www.mined.gob.sv/programas-de-estudio/?wpdmc=programa-de-estudio-de-educacion-media&utm_source" target="_blank">Plan de estudios de educación media </a></ol>
+      <ol><a href="https://www.mined.gob.sv/tramites/servicioSocial.html?utm_source" target="_blank">Servicios sociales</a></ol>
+      <ol><a href="https://www.ejemplo.com/social" target=" _blank>"> Educación Avanzada</a></ol>
+    </ul>
+  </div>
+  
